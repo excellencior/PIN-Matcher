@@ -131,6 +131,7 @@ body {
 .notation {
     text-align: center;
     color: white;
+    margin-top: -5px;
 }
 #pin-matched {
     display: none;
