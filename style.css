@@ -1,0 +1,141 @@
+body {
+    background-color: #10101B;
+}
+.pin-generate, .pin-submit {
+    /* background-color: #222436; */
+    color: white;
+    background-color: #222436;
+    margin: 15px;
+    height: 600px;
+    width: 540px;
+    padding: 30px;
+}
+.display {
+    color: white;
+    background-color: #3D4153;
+    width: 80%;
+    height: 50px;
+    padding: 5px;
+    border: 2px solid #858299;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+}
+.text-box {
+    margin-top: 170px;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 170px;
+    padding: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.p-button {
+    display: inline-block;
+    margin: 3px;
+    width: 95px;
+    padding: 20px 0;
+    background-color: #425062;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+}
+.p-button:hover {
+    background-color: lavender;
+    color: rgb(18, 169, 189);
+}
+.p-button:active {
+    transform: translateY(3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.submit-button {
+    color: white;
+    width: 65%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: lightseagreen;
+    transition: background-color 0.3s ease 0s;
+}
+.submit-button:hover {
+    background-color: darkcyan;
+}
+.submit-button:active {
+    background-color: rgb(1, 202, 202);
+    transform: translateY(3px);
+}
+.notation {
+    text-align: center;
+    color: white;
+}
+#pin-matched {
+    display: none;
+    
+}
+#pin-didnot-match {
+    display: none;
+}
